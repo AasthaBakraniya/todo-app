@@ -21,7 +21,7 @@ async function loadTasks() {
         <td>${task.end_date || ""}</td>
         <td>
           <button class="btn btn-warning btn-sm me-2" onclick="editTask(${task.id}, '${escapeQuotes(task.title)}', '${task.start_date}', '${task.end_date}')">Edit</button>
-          <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">Delete</button>
+          <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">X</button>
         </td>
       </tr>
     `;
